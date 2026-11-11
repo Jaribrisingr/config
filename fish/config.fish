@@ -1,3 +1,5 @@
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 if status is-interactive
     # Commands to run in interactive sessions can go here
     fzf_configure_bindings --directory=\cf --git_status=\cg --history=\ch --variables= --processes=
