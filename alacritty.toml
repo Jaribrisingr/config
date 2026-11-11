@@ -1,0 +1,42 @@
+
+[env]
+TERM = "alacritty"
+#TERM = "xterm-256color"
+
+[window]
+# Spread additional padding evenly around the terminal content.
+dynamic_padding = true
+padding = { x = 3, y = 3 }
+startup_mode = "Maximized"
+opacity = 0.98
+#blur = true
+decorations = "Full"
+
+[font]
+normal = { family = "MesloLGS Nerd Font", style = "Regular" }
+bold = { family = "MesloLGS Nerd Font", style = "Bold" }
+italic = { family = "MesloLGS Nerd Font", style = "Italic" }
+bold_italic = { family = "MesloLGS Nerd Font", style = "Bold Italic" }
+size = 14.0
+#offset = { x = 0, y = 14 }
+#glyph_offset = { x = 0, y = 7 }
+
+[cursor]
+style = { shape = "Underline", blinking = 'Always'}
+vi_mode_style = { shape = "Beam", blinking = 'Always'}
+
+[general]
+live_config_reload = true
+# Documentation at: https://alacritty.org/config-alacritty.html
+
+import = [
+  # "~/.config/alacritty/catppuccin-latte.toml"
+  # "~/.config/alacritty/catppuccin-frappe.toml"
+  # "~/.config/alacritty/catppuccin-macchiato.toml"
+   "~/.config/alacritty/catppuccin-mocha.toml"
+]
+
+[terminal]
+# shell = "/usr/local/bin/fish"
+shell = "/opt/homebrew/bin/fish"
+
